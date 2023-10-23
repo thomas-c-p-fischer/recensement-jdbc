@@ -10,29 +10,20 @@ public class Ville {
 	/** nom */
 	private String nom;
 	
-	/** region */
-	private Region region;
-	
-	/** departement */
-	private Departement departement;
+	private String codeDpt;
 
 	/** Constructeur
-	 * @param id
 	 * @param nom
-	 * @param region
-	 * @param departement
 	 */
-	public Ville(int id, String nom, Region region, Departement departement) {
+	public Ville(String nom, String codeDpt) {
 		super();
-		this.id = id;
 		this.nom = nom;
-		this.region = region;
-		this.departement = departement;
+		this.codeDpt = codeDpt;
 	}
 
 	@Override
 	public String toString() {
-		return "Ville [id=" + id + ", nom=" + nom + ", region=" + region + ", departement=" + departement + "]";
+		return "Ville [id=" + id + ", nom=" + nom + "]";
 	}
 
 	/** Getter
@@ -63,31 +54,11 @@ public class Ville {
 		this.nom = nom;
 	}
 
-	/** Getter
-	 * @return region
-	 */
-	public Region getRegion() {
-		return region;
+	public String getCodeDpt() {
+		return codeDpt;
 	}
 
-	/** Setter
-	 * @param region
-	 */
-	public void setRegion(Region region) {
-		this.region = region;
+	public void setCodeDpt(String codeDpt) {
+		this.codeDpt = codeDpt;
 	}
-
-	/** Getter
-	 * @return departement
-	 */
-	public Departement getDepartement() {
-		return departement;
-	}
-
-	/** Setter
-	 * @param departement
-	 */
-	public void setDepartement(Departement departement) {
-		this.departement = departement;
-	}	
 }

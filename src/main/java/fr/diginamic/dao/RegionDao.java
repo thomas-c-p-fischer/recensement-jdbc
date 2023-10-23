@@ -9,5 +9,7 @@ import fr.diginamic.entities.Region;
 public interface RegionDao {
 	List<Region> extraire();
 	void insert(Region region);
-	boolean delete();
+	boolean delete(Region region);
+	boolean existe(String code);
+	int extraireParNom(String nomRegion);
 }

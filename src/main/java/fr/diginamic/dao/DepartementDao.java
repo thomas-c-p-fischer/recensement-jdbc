@@ -8,6 +8,8 @@ import fr.diginamic.entities.Departement;
 /** Dao pour l'entité Departement */
 public interface DepartementDao {
 	List<Departement> extraire();
-	void insert(Departement departement);
-	boolean delete();
+	void insert(Departement departement, int regionId);
+	boolean delete(Departement departement);
+	boolean existe(String code);
+	int extraireParCode(String codeDepartement);
 }

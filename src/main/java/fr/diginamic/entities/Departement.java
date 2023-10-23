@@ -7,27 +7,35 @@ public class Departement {
 	/** id */
 	private int id;
 	
-	/** nom */
-	private String nom;
-	
-	/** region */
-	private Region region;
+	/** code */
+	private String code;
 
 	/** Constructeur
-	 * @param id
-	 * @param nom
+	 * @param code
 	 * @param region
 	 */
-	public Departement(int id, String nom, Region region) {
+	public Departement(String code) {
 		super();
-		this.id = id;
-		this.nom = nom;
-		this.region = region;
+		this.code = code;
 	}
 
 	@Override
 	public String toString() {
-		return "Departement [id=" + id + ", nom=" + nom + ", region=" + region + "]";
+		return "Departement [id=" + id + ", code=" + code + "]";
+	}
+
+	/** Getter
+	 * @return code
+	 */
+	public String getCode() {
+		return code;
+	}
+
+	/** Setter
+	 * @param code
+	 */
+	public void setCode(String code) {
+		this.code = code;
 	}
 
 	/** Getter
@@ -43,32 +51,4 @@ public class Departement {
 	public void setId(int id) {
 		this.id = id;
 	}
-
-	/** Getter
-	 * @return nom
-	 */
-	public String getNom() {
-		return nom;
-	}
-
-	/** Setter
-	 * @param nom
-	 */
-	public void setNom(String nom) {
-		this.nom = nom;
-	}
-
-	/** Getter
-	 * @return
-	 */
-	public Region getRegion() {
-		return region;
-	}
-
-	/** Setter
-	 * @param region
-	 */
-	public void setRegion(Region region) {
-		this.region = region;
-	}	
 }

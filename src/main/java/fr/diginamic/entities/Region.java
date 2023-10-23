@@ -9,15 +9,17 @@ public class Region {
 	
 	/** nom */
 	private String nom;
+	
+	/** code */
+	private String code;
 
 	/** Constructeur
-	 * @param id
 	 * @param nom
 	 */
-	public Region(int id, String nom) {
+	public Region(String nom, String code) {
 		super();
-		this.id = id;
 		this.nom = nom;
+		this.code = code;
 	}
 
 	@Override
@@ -30,13 +32,6 @@ public class Region {
 	 */
 	public int getId() {
 		return id;
-	}
-
-	/** Setter
-	 * @param id
-	 */
-	public void setId(int id) {
-		this.id = id;
 	}
 
 	/** Getter
@@ -52,6 +47,25 @@ public class Region {
 	public void setNom(String nom) {
 		this.nom = nom;
 	}
+
+	/** Setter
+	 * @return code
+	 */
+	public String getCode() {
+		return code;
+	}
+
+	/** Getter
+	 * @param code
+	 */
+	public void setCode(String code) {
+		this.code = code;
+	}
 	
-	
+	/** Setter
+	 * @param id
+	 */
+	public void setId(int id) {
+		this.id = id;
+	}
 }
